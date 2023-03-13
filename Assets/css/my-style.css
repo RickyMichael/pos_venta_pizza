@@ -1,0 +1,182 @@
+@media (max-width: 768px){
+    .img-portada{
+        display: none;
+    }
+}
+
+.img-portada img{
+    height: 100vh;
+}
+
+.card-header img{
+    width: 200px;
+}
+
+@media (min-width: 768px){
+    .login{
+        margin-top: calc(25% - 200px);
+    }
+}
+
+.offset-0{
+    margin-left: 1%;
+}
+
+.dataTables_length label, .dataTables_filter label, .dataTables_info{
+    color: white;
+}
+
+.table .thead-green th {
+    color: #fff;
+    background-color: #084927;
+    border-color: #066435;
+}
+
+div.bienvenida{
+    width: 100%;
+    height: calc(100vh - 56px);
+    background-image: url(../img/pizza_fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    position: relative;
+    padding-right: inherit;
+    padding-left: inherit;
+}
+
+div.fondo{
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+div.fondo2{
+    background-image: url(../img/Logo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 400px;
+    background-size: contain;
+    position: absolute;
+    margin-left: calc(50% - 200px);
+    margin-top: calc(50% - 600px);
+    z-index: 2;
+}
+
+@media (max-width: 575px){
+    div.fondo2{
+        width: 200px;
+        width: 200px;
+        margin-top: calc(50% - 100px);
+        margin-left: calc(50% - 100px);
+    }
+}
+
+@media (max-width: 768px){
+    div.fondo2{
+        width: 200px;
+        width: 200px;
+        margin-top: calc(50% - 200px);
+        margin-left: calc(50% - 100px);
+    }
+}
+
+@media (max-width: 990px){
+    div.fondo2{
+        width: 200px;
+        width: 200px;
+        margin-top: calc(50% - 300px);
+        margin-left: calc(50% - 100px);
+    }
+}
+
+.form-control{
+    position: relative;
+    padding-left: 30px;
+}
+
+.form-control + .form-control-feedback2{
+    position: absolute;
+    top: 35px;
+    left: 25px;
+}
+
+.categories{
+    cursor: pointer;
+    text-align:center;
+    margin:5px 0;
+    padding: 10px 20px;
+    background-color:#E2E2E2;
+    border-radius:3px;
+    color:#6B6B6B;
+    text-transform:uppercase;
+    display:inline-block;
+    font-weight:500;
+    padding-bottom: 7px;
+    border-bottom: 3px solid #6EC89B;
+ }
+ .selectedGat{
+    background-color:#6B6B6B;
+    color:#E2E2E2;
+    border-bottom: 3px solid #30A0E8 ;
+ }
+
+ .bg-green{
+    background-color: #084927;
+ }
+
+ /*Panel Size*/
+
+ .producto{
+    padding-left: 10px;
+    padding-right: 10px;
+ }
+
+.pn {
+	height: 222px;
+	/*width:154px;*/
+	cursor:pointer;
+	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pn:hover {
+	box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+	
+}
+
+.darkblue-panel {
+	text-align: center;
+	background: #084927;
+	/*background: #444c57;#2f323e;#071446*/
+	border-radius:5px;
+	/* margin-left: 2px;
+	margin-top: 2px; */
+	margin-right: 0px;
+}
+.darkblue-panel .darkblue-header {
+	background: transparent;
+	padding: 1px;
+	margin-bottom: 0px;
+}
+.darkblue-panel h1 {
+	color: #f2f2f2;
+}
+.darkblue-panel h5 {
+	font-weight: 200;
+	margin-top: 5px;
+	color: white;
+}
+.darkblue-panel footer {
+	color: white;
+}
+.darkblue-panel footer h5 {
+	/* margin-left:10px; 
+	margin-right: 10px; */
+	font-weight: 900;
+}
+

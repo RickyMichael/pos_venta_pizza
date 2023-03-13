@@ -1,0 +1,10 @@
+#deshabilita la visualización de los archivos de un directorio que no tiene un archivo index
+Options All -Indexes
+#habilita la opcion de rescribir los parametros del servidor
+RewriteEngine On
+#verifica si la URL solicitada no corresponde a un directorio en el servidor. Si la URL es un directorio existente, la regla de reescritura siguiente no se aplica.
+RewriteCond %{REQUEST_FILENAME} !-d
+#verifica si la URL solicitada no corresponde a un archivo existente en el servidor. Si la URL es un archivo existente, la regla de reescritura siguiente no se aplica.
+RewriteCond %{REQUEST_FILENAME} !-f
+#Esta línea establece la regla de reescritura principal. Si las dos condiciones anteriores son verdaderas, entonces cualquier solicitud de URL se redirige al archivo index.php en el servidor, y la URL solicitada se pasa como un parámetro llamado "url". La opción "QSA" significa que cualquier parámetro de consulta existente en la URL también se pasará, y la opción "L" significa que la regla de reescritura será la última que se aplicará, y el proceso de reescritura se detendrá.
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
